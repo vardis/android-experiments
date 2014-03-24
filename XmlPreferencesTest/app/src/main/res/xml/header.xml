@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<preference-headers xmlns:android="http://schemas.android.com/apk/res/android">
+<header android:fragment="com.giorgos.preferencestest.app.XmlTestPreferencesFragment" android:title="Application preferences"
+    android:summary="General properties" android:icon="@drawable/ic_launcher"/>
+</preference-headers>

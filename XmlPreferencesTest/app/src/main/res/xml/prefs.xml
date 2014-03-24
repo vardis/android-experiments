@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory android:title="System settings">
+        <CheckBoxPreference android:key="PREF_AUTO_UPDATE" android:title="Auto-Update" android:summary="@string/auto_update_pref_summary"
+            android:defaultValue="true"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="Location settings">
+        <ListPreference android:key="PREF_PROVIDER" android:title="Default location provider"
+            android:summary="Choose your preferred location provider" android:entries="@array/providers_names"
+            android:entryValues="@array/providers_values"
+            android:defaultValue="1"/>
+
+        <PreferenceScreen android:title="Advanced settings" android:key="PREF_ADV_LOC">
+            <EditTextPreference android:key="PREF_LOC_MIN_TIME" android:title="Minimum time between samples"
+                android:summary="Time in seconds to wait before fetching new location samples" android:defaultValue="5 mins"/>
+
+            <EditTextPreference android:key="PREF_LOC_MIN_DISTANCE" android:title="Minimum distance from previous sample"
+                android:summary="The minimum distance between samples to be considered distinct" android:defaultValue="100 meters"/>
+        </PreferenceScreen>
+    </PreferenceCategory>
+
+</PreferenceScreen>

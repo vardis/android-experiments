@@ -1,0 +1,37 @@
+<!--
+If your app is using the Support Library for compatibility on versions as low as Android 2.1,
+the showAsAction attribute is not available from the android: namespace. Instead this attribute
+is provided by the Support Library and you must define your own XML namespace and use that namespace
+as the attribute prefix.
+-->
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.giorgos.preferencestest.testactionbar.app.MainActivity" >
+
+    <!--
+    The search menu item includes a custom action view that is expanded once the item
+    has been selected. In this case we are using a view from the support library.
+    -->
+    <item android:id="@+id/action_search"
+        android:title="Search"
+        app:showAsAction="ifRoom|collapseActionView"
+        app:actionViewClass="android.support.v7.widget.SearchView"
+        android:icon="@android:drawable/ic_menu_search"/>
+
+    <!--
+    The share menu action is using an action provider. An action provider replaces an action button
+    with a customized layout. However, unlike an action view, an action provider takes control of all
+    the action's behaviors and an action provider can display a submenu when pressed.
+    -->
+    <item android:id="@+id/action_share"
+        android:title="Share"
+        app:showAsAction="ifRoom"
+        android:icon="@android:drawable/ic_menu_share"
+        app:actionProviderClass="android.support.v7.widget.ShareActionProvider"/>
+
+    <item android:id="@+id/action_settings"
+        android:title="@string/action_settings"
+        android:orderInCategory="100"
+        app:showAsAction="never" />
+</menu>
