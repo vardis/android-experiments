@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">TestHttpAsync</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="intro_message">Status:</string>
+    <string name="btn_start">Start!</string>
+    <string name="results_label">Word count:</string>
+    <string name="book_url">http://www.gutenberg.org/cache/epub/1342/pg1342.txt</string>
+    <string name="download_status">downloading book</string>
+    <string name="counting_status">counting words</string>
+
+
+</resources>
