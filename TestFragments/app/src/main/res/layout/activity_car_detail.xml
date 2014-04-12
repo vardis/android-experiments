@@ -1,0 +1,10 @@
+<!--
+Acts as the container for the fragment's layout controls
+-->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/car_detail_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.giorgos.fragments.app.CarDetailActivity"
+    tools:ignore="MergeRootFrame" />
