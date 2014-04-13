@@ -48,7 +48,7 @@ public class CarListActivity extends FragmentActivity
             ((CarListFragment) getSupportFragmentManager()
                     .findFragmentById(R.id.car_list))
                     .setActivateOnItemClick(true);
-        } 
+        }
 
         // TODO: If exposing deep links into your app, handle intents here.
     }
